@@ -1,0 +1,33 @@
+:global(.edm-hm) .header {
+  padding: 0.5rem;
+  position: relative;
+  color: #fff;
+  background-color: #007ee5;
+
+  h6 {
+    color: #fff;
+  }
+
+  &__back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 0.25rem;
+    margin: 0 -0.25rem;
+    right: 0.5rem;
+    top: 50%;
+    border: 0;
+    transform: translateY(-50%);
+    background: transparent;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    & img {
+      width: 0.75rem;
+    }
+  }
+}

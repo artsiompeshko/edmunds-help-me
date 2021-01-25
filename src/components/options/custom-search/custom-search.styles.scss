@@ -1,0 +1,52 @@
+:global(.edm-hm) .custom-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  input {
+    height: 2rem;
+    border: 2px solid #eaeaea;
+    font-size: 14px;
+    flex: 1 1 100%;
+    border-radius: 0.25rem;
+    outline: none;
+    transition: border-color 0.15s linear;
+    padding: 0.25rem 0.5rem;
+
+    &:hover {
+      border-color: lighten($color: #007ee5, $amount: 5);
+      font-size: 14px;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: lighten($color: #007ee5, $amount: 10);
+      font-size: 14px;
+    }
+  }
+
+  input::placeholder {
+    color: #999;
+  }
+
+  button {
+    flex-shrink: 0;
+    margin: 0 0 0 0.25rem;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #8ccb00;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #70a200;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      background-color: lighten($color: #8ccb00, $amount: 1);
+    }
+  }
+}
