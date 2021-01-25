@@ -13,16 +13,15 @@ const OptionsContainer = ({ handleClose }) => {
     }
 
     setLoading(true);
+    try {
+      const result = await (
+        await fetch(`https://dev-dsg11-api.carcode.com/carcode/v1/ccapi/navigation?search=${query.trim()}`)
+      ).json();
 
-    const result = await (
-      await fetch(
-        `http://carcode-api-web-68628.int-media-alb.us-east-1.carcode-dev.accounts.edmunds.com/carcode/navigation?search=${query.trim()}`,
-      )
-    ).json();
-
-    setLoading(false);
-
-    setSearchResult(result);
+      setSearchResult(result);
+    } finally {
+      setLoading(false);
+    }
   }, []);
 
   return (
