@@ -8,6 +8,7 @@ const CustomSearch = ({ query, handleQueryChange, handleOnSubmit, loading }) => 
       value={query}
       placeholder="e.g. What’s faster: a 911 or a Mustang?"
       onInput={handleQueryChange}
+      autoFocus
     />
     <button disabled={loading} type="submit">
       GO
