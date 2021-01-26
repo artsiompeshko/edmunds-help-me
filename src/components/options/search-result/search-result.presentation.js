@@ -30,7 +30,12 @@ const SearchResult = ({ searchResult }) => (
               });`}
             />
             <div class={style['search-result-description']}>
-              <p>{youtubeLinkItem.snippet.title.slice(0, 65)}</p>
+              <p>
+                {
+                  new DOMParser().parseFromString(youtubeLinkItem.snippet.title.slice(0, 65), 'text/html').body
+                    .innerHTML
+                }
+              </p>
             </div>
           </a>
         </li>
