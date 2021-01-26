@@ -12,6 +12,10 @@ const OPTIONS = [
     link: 'https://www.edmunds.com/appraisal/',
   },
   {
+    text: 'Long-Term Road Tests',
+    link: 'https://www.edmunds.com/car-reviews/long-term-road-tests/',
+  },
+  {
     text: 'Dealer Reviews',
     link: 'https://www.edmunds.com/dealerships/',
   },

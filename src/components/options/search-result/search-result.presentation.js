@@ -19,7 +19,7 @@ const SearchResult = ({ searchResult }) => (
           </a>
         </li>
       ))}
-      <h6>Also checkout our youtube channel:</h6>
+      <h6>Also checkout our YouTube channel:</h6>
       {searchResult?.y?.items.map(youtubeLinkItem => (
         <li class={style['search-result-item']}>
           <a href={youtubeLinkItem.link} target="_blank" rel="noreferrer">
