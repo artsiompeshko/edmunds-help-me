@@ -23,6 +23,10 @@ const OPTIONS = [
     text: 'Edmunds videos',
     link: 'https://www.youtube.com/channel/UCF8e8zKZ_yk7cL9DvvWGSEw',
   },
+  {
+    text: 'Service Appointment',
+    link: 'https://edmunds-spot.netlify.app/',
+  },
 ];
 
 const PredefinedOptions = () => (
