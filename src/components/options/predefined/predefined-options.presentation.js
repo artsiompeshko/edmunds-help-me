@@ -25,7 +25,7 @@ const OPTIONS = [
   },
   {
     text: 'Service Appointment',
-    link: 'https://edmunds-spot.netlify.app/',
+    link: 'https://edmunds-spot-hackathon.netlify.app/',
   },
 ];
 
